@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>waitlist</title>
+    <meta name="title" content="Classykicks">
+    
+    <meta name="description" content="A minimal email client for inbox zero enthusiasts.">
+    <meta name="keywords" content="tiny, mail, client, gmail, icloud, minimal, superhuman">
+    <meta name="author" content="@ijazulrehman">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:title" content="Doomout">
+    <meta property="og:description" content="A minimal email client for inbox zero enthusiasts.">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="#">
+    <meta property="twitter:title" content="Doomout">
+    <meta property="twitter:description" content="A minimal email client for inbox zero enthusiasts.">
+    <link href="images/thumbnail.jpg" rel="apple-touch-icon">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <link href="css/styles.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <style>/* Efecto fade para la página */
+  .page-container {
+      transition: opacity 0.6s ease-in-out;
+      opacity: 1; /* La página es visible por defecto */
+  }
+  
+  /* Al aplicar esta clase, la página se desvanece */
+  .fade-out {
+      opacity: 0;
+  }
+  
+  /* La página aparece al cargar */
+  .fade-in {
+      opacity: 0;
+  }
+  
+  /* Al cargar completamente la página, aparece */
+  .page-container.loaded {
+      opacity: 1;
+  }
+  
+ 
+  
+
+  
+  </style>
+  </head>
+
+<body>
+  <div class="page-container fade-in">
+  <header>
+   
+    <a href="../login+signup1.html" class="button transition-link">
+      <i class="fas fa-user"></i>
+  </a>
+</header>
+  <div class="modal">
+  <button type="button" class="modal-close modal-toggle"><i class="icon" data-feather="x"></i><span class="hide-mobile">ESC</span></button>
+  <div class="modal-content">
+    <div class="success">
+      <a href="index.html" class="logo"><img src="images/logo.svg" alt="logo"/></a>
+      <h2 class="modal-title first-name" id="title-name"></h2>
+      <p>You're on the list! We'll be in touch.</p>
+      <a href="index.html" class="button">Back home</a>
+    </div>
+    <div class="form-content">
+      <a href="index.html" class="logo"><img src="images/001.png" alt="logo"/></a>
+      <h2 class="modal-title">Join the Classykicks Waitlist</h2>
+      <p class="modal-subtitle">Todavía estamos en las primeras etapas y le informaremos cuando estemos 
+        listos para recibir más evaluadores .</p>
+      <form class='form' name='ClassykicksForm' method='POST'><input type='hidden' name='form-name' value='ClassykicksForm' />
+        <div class="group">
+          <input type="text" id="firstName" name="first-name" placeholder="&nbsp;" autocomplete="off" required>
+          <label for="first-name">Primer nombre</label>
+          <span class="border"></span>
+        </div>
+        <div class="group">
+          <input type="email" name="email" placeholder="&nbsp;" autocomplete="off" required>
+          <label for="email">Correo electrónico</label>
+          <span class="border"></span>
+        </div>
+        <button type="submit" class="button">Únete a la lista de espera</button>
+      </form>
+    </div>
+  </div>
+</div>
+  <div class="content">
+    <a href="index.html" class="logo"><img src="images/001.png" alt="logo"/></a>
+    <div class="hero">
+      <h1 class="title">Estamos construyendo algo increíble. </h1>
+      <h1 class="title shift clip">
+        <span class="word-shift">
+          <b class="is-visible">Únete a nuestra lista de espera para ser el primero en saber cuando lancemos.&nbsp;</b>
+          <b>Accede antes que los demás.</b>
+          <b>Obtén una oferta especial cuando lancemos.</b>
+          <b>Sudaderas Especiales</b>
+          <b>Cosmetica</b>
+          <b>Especial</b>
+          <b>Amor</b>
+        </span>
+      </h1>
+      <button class="button modal-toggle">Únete a la lista de espera</button>
+      <p class="subtitle">Hola Chavales <img src="images/logo-apple.svg" alt="apple"/></p>
+    </div>
+    <div class="screen-wrapper">
+      <img src="images/intro.jpg" class="screen" alt="screen"/>
+    </div>
+    <section class="section section-features">
+      <h2 class="title">Una experiencia de correo electrónico intencionadamente simple</h1>
+      <div class="features">
+        <img src="images/overlay-left.svg" class="overlay-left hide-mobile" alt="overlay"/>
+        <img src="images/overlay-right.svg" class="overlay-right hide-mobile" alt="overlay"/>
+        <img src="images/overlay-top.svg" class="overlay-top show-mobile" alt="overlay"/>
+        <img src="images/overlay-bottom.svg" class="overlay-bottom show-mobile" alt="overlay"/>
+        <div class="row donts">
+          <div class="feature"><i class="icon" data-feather="x"></i> Tecnologia</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> electrónico</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Ropa</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Libros</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Accesorios</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Papeleria</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Oficina</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Sudaderas</div>
+          <!-- Repeat-->
+          <div class="feature"><i class="icon" data-feather="x"></i> Herrmientas de Escritorio</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Lapis</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Mochilas</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Portatiles</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Movil</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Cosas</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Camara</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> TEC</div>
+        </div>
+        <div class="row dos">
+          <div class="feature"><i class="icon" data-feather="x"></i> Tecnologia</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> electrónico</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Ropa</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Libros</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Accesorios</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Papeleria</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Oficina</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Sudaderas</div>
+          <!-- Repeat-->
+          <div class="feature"><i class="icon" data-feather="x"></i> Herrmientas de Escritorio</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Lapis</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Mochilas</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Portatiles</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Movil</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Cosas</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> Camara</div>
+          <div class="feature"><i class="icon" data-feather="x"></i> TEC</div>
+        
+        </div>
+      </div>
+      <!-- <p>If you’re looking for an email client with more features, try <a href="">these</a>.</p> -->
+    </section>
+    <section class="section section-providers">
+      <h2 class="title">Úselo con todos y cada uno de sus proveedores de correo electrónico</h2>
+      <div class="cards">
+        <img src="images/overlay-left.svg" class="overlay-left hide-mobile" alt="overlay"/>
+        <img src="images/overlay-right.svg" class="overlay-right hide-mobile" alt="overlay"/>
+        <div class="slider">
+          <div class="slide"><img src="images/card-icloud.svg" alt="icloud"/></div>
+          <div class="slide"><img src="images/card-gmail.svg" alt="gmail"/></div>
+          <div class="slide"><img src="images/card-outlook.svg" alt="outlook"/></div>
+          <div class="slide"><img src="images/card-yahoo.svg" alt="yahooe"/></div>
+          <div class="slide"><img src="images/card-pop3.svg" alt="pop3"/></div>
+          <div class="slide"><img src="images/card-imap.svg" alt="imap"/></div>
+        </div>
+      </div>
+    </section>
+    <section class="section imagery">
+      <h2 class="title">Celebre Inbox  con hermosas imágenes</h2>
+      <img src="images/overlay-bottom.svg" class="overlay-bottom hide-mobile" alt="overlay"/>
+      <div class="zero-slider">
+        <div class="slide"><img src="images/perfume.jpg" alt="inboxzero"/></div>
+        <div class="slide"><img src="images/1212.jpg" alt="inboxzero"/></div>
+        <div class="slide"><img src="images/botella.jfif" alt="inboxzero"/></div>
+        <div class="slide"><img src="images/altavos1.jfif" alt="inboxzero"/></div>
+        <div class="slide"><img src="images/auriculare.jfif" alt="inboxzero"/></div>
+        <div class="slide"><img src="images/screen-illo-6.png" alt="inboxzero"/></div>
+      </div>
+    </section>
+    <section class="section cta">
+      <div class="cta-content">
+        <h1 class="title">Estamos construyendo algo increíble. Únete a nuestra lista de espera para ser el primero en saber cuando lancemos.</h1>
+        <button class="button white modal-toggle">Join the waitlist</button>
+        <p class="subtitle">Hola Chavales <img src="images/logo-apple.svg" alt="apple"/></p>
+      </div>
+      <div class="zero-slider">
+        <div class="slide"><img src="https://img.freepik.com/fotos-premium/vista-cadena-montanosa-cielo-azul-algunas-montanas-ai-generativo_1034986-14337.jpg?w=1060" alt="inboxzero"/></div>
+        <div class="slide"><img src="https://img.freepik.com/fotos-premium/majestuosos-picos-montanas-elevan-cielo-estrellado-noche-creando-paisaje-sereno-tonos-azules-profundos_210687-18408.jpg?w=1380" alt="inboxzero"/></div>
+        <div class="slide"><img src="https://img.freepik.com/fotos-premium/primer-plano-montana-cielo-azul-fondo_1034044-109939.jpg?w=1380" alt="inboxzero"/></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>&copy; Classykicks</p>
+    </footer>
+    </div>
+  </div>
+  <script src="./js/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/scripts.min.js"></script>
+<script>
+
+  // Close modal on escape key
+  $(document).keyup(function(e) {
+    if (e.key === "Escape") {
+      $('.modal').removeClass('modal-show');
+      $('.content').removeClass('content-blurred');
+      $('body').removeClass('no-scroll');
+    }
+  });
+
+  $(function(){
+
+    // Provider card slider
+    $('.slider').flickity({
+      pauseAutoPlayOnHover: false,
+      prevNextButtons: false,
+      cellAlign: 'center',
+      draggable:  false,
+      freeScroll: false,
+      wrapAround: true,
+      pageDots: false,
+      autoPlay: 3000,
+    });
+
+    // Imbox zero slider
+    $('.zero-slider').flickity({
+      pauseAutoPlayOnHover: false,
+      prevNextButtons: false,
+      cellAlign: 'center',
+      freeScroll: false,
+      wrapAround: false,
+      draggable: false,
+      pageDots: false,
+      autoPlay: 3000,
+      fade: true,
+    });
+
+    // Open & close modal
+    $('.modal-toggle').click(function(){
+      $('.modal').toggleClass('modal-show');
+      $('.content').toggleClass('content-blurred');
+      $('body').toggleClass('no-scroll');
+    });
+
+    // Reserve username form
+    $(".form").submit(function(e) {
+      e.preventDefault();
+      var $form = $(this);
+      $.post($form.attr("action"), $form.serialize()).then(function() {
+        $('.form-content').addClass('form-content-hide');
+        $('.success').addClass('success-show');
+      });
+    });
+
+    // Save user's first name
+    $(".form").submit(function(e) {
+      e.preventDefault();
+      var value = $("#firstName").val();
+      $('.first-name').text("Thank you," + " " + value + "!");
+    });
+
+    // Feather icons
+    feather.replace()
+
+    // ScrollReveal
+    ScrollReveal().reveal('.hero, .title, .screen, .features, .cards, .zero-slider', {
+      distance: '40px',
+      duration: 2000,
+      mobile: false,
+      reset: false,
+      opacity: 0
+    });
+
+  });
+
+
+  document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Guarda el formulario en una variable
+        var form = this;
+        
+        // Espera 4 segundos antes de mostrar la alerta y redirigir
+        setTimeout(function() {
+            // Crea un nuevo objeto FormData para enviar los datos del formulario
+            var formData = new FormData(form);
+
+            // Usa fetch para enviar los datos del formulario
+            fetch(form.action, {
+                method: form.method,
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Los datos se han enviado correctamente.');
+                    
+                    // Redirige después de enviar el formulario
+                    window.location.href = '#';
+                } else {
+                    alert('Hubo un problema al enviar los datos.');
+                }
+            })
+            .catch(error => {
+                alert('¡🎉🙌  Gracias por unirte a nuestra lista de espera! Estás en la lista para ser uno de los primeros en enterarte de nuestro lanzamiento. 📢Mantente atento a tu correo electrónico para actualizaciones y sorpresas. ✉️👀');
+            });
+        }, 4000);
+    });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll(".transition-link"); // Selecciona los enlaces con la clase 'transition-link'
+  
+      // Agregar el efecto fade al hacer clic en un enlace
+      links.forEach((link) => {
+          link.addEventListener("click", function (e) {
+              e.preventDefault(); // Prevenir la acción predeterminada del enlace
+              const href = this.href; // Guardar el destino del enlace
+  
+              // Añadir la clase fade-out al contenedor principal
+              document.querySelector('.page-container').classList.add("fade-out");
+  
+              // Esperar hasta que la animación termine y redirigir
+              setTimeout(() => {
+                  window.location.href = href; // Ir a la nueva página
+              }, 600); // Coincide con la duración de la animación CSS
+          });
+      });
+  
+      // Cuando la página se carga, elimina la clase fade-in para hacer visible el contenido
+      window.addEventListener("load", function () {
+          const container = document.querySelector('.page-container');
+          container.classList.add('loaded');  // Añadir la clase 'loaded'
+          container.classList.remove("fade-in");  // Quitar la clase 'fade-in'
+      });
+  });
+  </script>
+</div>
+</body>
+
+</html>

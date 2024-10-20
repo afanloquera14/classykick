@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ClassyKicks Shop - Página de listado de productos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/g.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/prueba.css">
+    <link rel="stylesheet" href="assets/css/txt.css">
+
+
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+<style>/* Efecto fade para la página */
+    .page-container {
+        transition: opacity 0.9s ease-in-out;
+        opacity: 1; /* La página es visible por defecto */
+    }
+    
+    /* Al aplicar esta clase, la página se desvanece */
+    .fade-out {
+        opacity: 0;
+    }
+    
+    /* La página aparece al cargar */
+    .fade-in {
+        opacity: 0;
+    }
+    
+    /* Al cargar completamente la página, aparece */
+    .page-container.loaded {
+        opacity: 1;
+    }
+    
+   
+    
+  
+    
+    </style>
+
+   
+</head>
+
+<body>
+    <div class="page-container fade-in">
+    
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">Classykicksinfo@gmail.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340"> 602433221</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+
+    
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+    
+            <a class="navbar-brand text-success logo h1 align-self-center transition-link" href="pruebainicio/index.html">
+                ClassyKicks
+            </a>
+    
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link transition-link" href="pruebainicio/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link transition-link" href="shop.html">Inventario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link transition-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#" class="cart-icon" id="cart-icon">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none transition-link" href="login+signup1.html">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+    </nav>
+    
+    
+<div class="content slide-in">
+
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="cart-window" id="cart-window">
+        <div class="cart-header">
+            <h2>Tu Carrito</h2>
+            <span class="close-btn" id="close-btn">&times;</span>
+        </div>
+        <div class="cart-content" id="cart-content">
+            <p>No hay productos en el carrito.</p>
+        </div>
+        <div class="cart-footer">
+            <p>Total: <span id="cart-total">$0.00</span></p>
+            <button id="checkout-btn">Pagar</button>
+        </div>
+    </div>
+
+
+  
+    <div class="container py-5">
+        <div class="row">
+
+            <div class="col-lg-3">
+                <h1 class="h2 pb-4">Categorías</h1>
+                <ul class="list-unstyled templatemo-accordion">
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Tecnología y Electrónica
+                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul class="collapse show list-unstyled pl-3">
+                            <li><a class="text-decoration-none transition-link" href="shop4.html">Dispositivos electrónicos</a></li>
+                            <li><a class="text-decoration-none transition-link" href="shop2.html">Accesorios tecnológicos</a></li>
+                        </ul>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Ropa y Accesorios
+                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul class="collapse show list-unstyled pl-3">
+                            <li><a class="text-decoration-none transition-link" href="shop1.html">Ropa</a></li>
+                            <li><a class="text-decoration-none transition-link" href="shop3.html">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Libros
+                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul class="collapse show list-unstyled pl-3">
+                            <li><a class="text-decoration-none transition-link" href="shop5.html">Libros de desarrollo personal</a></li>
+                            <li><a class="text-decoration-none transition-link" href="shop6.html">Libros de ficción</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Papelería y Oficina
+                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul class="collapse show list-unstyled pl-3">
+                            <li><a class="text-decoration-none transition-link" href="shop7.html">Herramientas de escritura</a></li>
+                            <li><a class="text-decoration-none transition-link" href="shop8.html">Mobiliario de oficina</a></li>
+                            <li><a class="text-decoration-none transition-link" href="shop9.html">Mochilas</a></li>
+                        </ul>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Deporte y Salud
+                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul class="collapse show list-unstyled pl-3">
+                            <li><a class="text-decoration-none transition-link" href="shop10.html">Equipamiento deportivo
+                            </a></li>
+                            <li><a class="text-decoration-none transition-link" href="shop11.html">Hidratación y equipo de Descanso</a></li>
+                        </ul>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                            Decoración
+                            <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul class="collapse show list-unstyled pl-3">
+                            <li><a class="text-decoration-none transition-link" href="shop12.html">Pósters</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none transition-link" href="#">
+                            Entretenimiento
+                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul id="collapseTwo" class="collapse list-unstyled pl-3">
+                            <li><a class="text-decoration-none transition-link" href="shop13.html">Videojuegos</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="pb-3">
+                        <a class="collapsed d-flex justify-content-between h3 text-decoration-none transition-link" href="#">
+                            Cosmética
+                            <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                        </a>
+                        <ul id="collapseThree" class="collapse list-unstyled pl-3">
+                            <li><a class="text-decoration-none transition-link" href="shop14.html">Fragancias</a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+
+
+            
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-inline shop-top-menu pb-3 pt-1">
+                            <li class="list-inline-item">
+                                <a class="nav-link transition-link" href="shop.html"> .</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="nav-link transition-link" href="shop1.html">.</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="nav-link transition-link" href="shop2.html">.</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 pb-4">
+                        <div class="d-flex">
+                            <select class="form-control">
+                                <option>Productos Destacados</option>
+                                <option>A to Z</option>
+                                <option>Item</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0 "style="background-color: transparent;">
+                            <div class="card rounded-0">
+                                <img class="card-img rounded-0 img-fluid " src="assets/img/logotec1.jfif">
+                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    <ul class="list-unstyled">
+                                        
+                                        <li><a class="btn btn-success text-white mt-2" href="shop4.html"><i class="far fa-eye"></i></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="shop4.html" class="h3 text-decoration-none ">Tecnología y Electrónica </a>
+                                <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                    
+                                    <li class="pt-2">
+                                        <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                    </li>
+                                </ul>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0"style="background-color: transparent;">
+                            <div class="card rounded-0">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/acc.jfif">
+                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    <ul class="list-unstyled">
+                                        
+                                        <li><a class="btn btn-success text-white mt-2" href="shop1.html"><i class="far fa-eye"></i></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="shop-single.html" class="h3 text-decoration-none">Ropa y Accesorios</a>
+                                <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                    
+                                    <li class="pt-2">
+                                        <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0"style="background-color: transparent;">
+                            <div class="card rounded-0">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/book.avif">
+                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    <ul class="list-unstyled">
+                                        
+                                        <li><a class="btn btn-success text-white mt-2" href="shop5.html"><i class="far fa-eye"></i></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body"> 
+                                <a href="shop-single3.html" class="h3 text-decoration-none">Libros
+                                </a>
+                                <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                    
+                                    <li class="pt-2">
+                                        <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0"style="background-color: transparent;">
+                            <div class="card rounded-0">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/paper.jpg">
+                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    <ul class="list-unstyled">
+                                        
+                                        <li><a class="btn btn-success text-white mt-2" href="shop7.html"><i class="far fa-eye"></i></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="shop7.html" class="h3 text-decoration-none">Papelería y Oficina
+                                </a>
+                                <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                    
+                                    <li class="pt-2">
+                                        <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0"style="background-color: transparent;">
+                            <div class="card rounded-0">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/dep.jfif">
+                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    <ul class="list-unstyled">
+                                        
+                                        <li><a class="btn btn-success text-white mt-2" href="shop10.html"><i class="far fa-eye"></i></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="shop10.html" class="h3 text-decoration-none">Deporte y Salud
+                                </a>
+                                <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                    
+                                    <li class="pt-2">
+                                        <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0"style="background-color: transparent;">
+                            <div class="card rounded-0">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/dec.avif">
+                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    <ul class="list-unstyled">
+                                        
+                                        <li><a class="btn btn-success text-white mt-2" href="shop12.html"><i class="far fa-eye"></i></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="shop12.html" class="h3 text-decoration-none">Decoración</a>
+                                <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                    
+                                    <li class="pt-2">
+                                        <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0"style="background-color: transparent;">
+                            <div class="card rounded-0">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/vid.png">
+                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    <ul class="list-unstyled">
+                                        
+                                        <li><a class="btn btn-success text-white mt-2" href="shop13.html"><i class="far fa-eye"></i></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="shop13.html" class="h3 text-decoration-none">Entretenimiento  </a>
+                                <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                    
+                                    <li class="pt-2">
+                                        <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 product-wap rounded-0"style="background-color: transparent;">
+                            <div class="card rounded-0">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/cos.avif">
+                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                                    <ul class="list-unstyled">
+                                        
+                                        <li><a class="btn btn-success text-white mt-2" href="shop14.html"><i class="far fa-eye"></i></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <a href="shop14.html" class="h3 text-decoration-none">Cosmética</a>
+                                <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                    
+                                    <li class="pt-2">
+                                        <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
+                                        <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+        </div>
+    
+   
+
+    
+    <section class="bg-light py-5">
+        <div class="container my-4">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">Colaboracion con</h1>
+                    
+                </div>
+                <div class="col-lg-9 m-auto tempaltemo-carousel">
+                    <div class="row d-flex flex-row">
+                     
+                        <div class="col-1 align-self-center">
+                            <a class="h1" href="#multi-item-example" role="button" data-bs-slide="prev">
+                                <i class="text-light fas fa-chevron-left"></i>
+                            </a>
+                        </div>
+                    
+
+
+                        <div class="col">
+                            <div class="carousel slide carousel-multi-item pt-2 pt-md-0" id="multi-item-example" data-bs-ride="carousel">
+                                
+                                <div class="carousel-inner product-links-wap" role="listbox">
+
+                                    
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                   
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                               
+                            </div>
+                        </div>
+                        
+
+                       
+                        <div class="col-1 align-self-center">
+                            <a class="h1" href="#multi-item-example" role="button" data-bs-slide="next">
+                                <i class="text-light fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">ClassyKicks Shop</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            Calle Carrilet 136,Cornella de LLobregat,0897
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">602433221</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com"> Classykicksinfo@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Lujo</a></li>
+                        <li><a class="text-decoration-none" href="#">Gabbana Wear</a></li>
+                        <li><a class="text-decoration-none" href="#">Men's wear</a></li>
+                        <li><a class="text-decoration-none" href="#">Women's wear</a></li>
+                        <li><a class="text-decoration-none" href="#">Vestido Popular</a></li>
+                       
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Informacion adicional</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="#">Acerca de</a></li>
+                        <li><a class="text-decoration-none" href="#">Ubicaciones de Tiendas</a></li>
+                        <li><a class="text-decoration-none" href="#">FAQs</a></li>
+                        <li><a class="text-decoration-none" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">dirección de email</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Subscribe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
+
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".transition-link"); // Selecciona los enlaces con la clase 'transition-link'
+
+    // Agregar el efecto fade al hacer clic en un enlace
+    links.forEach((link) => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevenir la acción predeterminada del enlace
+            const href = this.href; // Guardar el destino del enlace
+
+            // Añadir la clase fade-out al contenedor principal
+            document.querySelector('.page-container').classList.add("fade-out");
+
+            // Esperar hasta que la animación termine y redirigir
+            setTimeout(() => {
+                window.location.href = href; // Ir a la nueva página
+            }, 600); // Coincide con la duración de la animación CSS
+        });
+    });
+
+    // Cuando la página se carga, elimina la clase fade-in para hacer visible el contenido
+    window.addEventListener("load", function () {
+        const container = document.querySelector('.page-container');
+        container.classList.add('loaded');  // Añadir la clase 'loaded'
+        container.classList.remove("fade-in");  // Quitar la clase 'fade-in'
+    });
+});
+
+
+    // Obtener elementos
+const cartIcon = document.getElementById('cart-icon');
+const cartWindow = document.getElementById('cart-window');
+const closeBtn = document.getElementById('close-btn');
+const cartContent = document.getElementById('cart-content');
+const cartTotal = document.getElementById('cart-total');
+const cartCount = document.getElementById('cart-count');
+const checkoutBtn = document.getElementById('checkout-btn');
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+// Array para almacenar los productos del carrito
+let cart = [];
+
+// Función para abrir el carrito
+cartIcon.addEventListener('click', () => {
+    cartWindow.classList.add('active');
+});
+
+// Función para cerrar el carrito
+closeBtn.addEventListener('click', () => {
+    cartWindow.classList.remove('active');
+});
+
+// Función para actualizar el contenido del carrito
+function updateCart() {
+    cartContent.innerHTML = ''; // Limpiar el contenido actual
+    if (cart.length === 0) {
+        cartContent.innerHTML = '<p>No hay productos en el carrito.</p>';
+    } else {
+        cart.forEach((item, index) => {
+            const productItem = document.createElement('div');
+            productItem.classList.add('cart-item');
+            productItem.innerHTML = `
+                <p>${item.name} - $${item.price.toFixed(2)}</p>
+                <button class="remove-item" data-index="${index}">Eliminar</button>
+            `;
+            cartContent.appendChild(productItem);
+        });
+
+        // Actualizar el total
+        const total = cart.reduce((sum, item) => sum + item.price, 0);
+        cartTotal.textContent = `$${total.toFixed(2)}`;
+        cartCount.textContent = cart.length;
+
+        // Eliminar un producto
+        document.querySelectorAll('.remove-item').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const index = e.target.dataset.index;
+                cart.splice(index, 1); // Eliminar del array
+                updateCart(); // Actualizar el carrito
+            });
+        });
+    }
+}
+
+// Añadir producto al carrito
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        const productName = e.target.closest('.add-to-cart').dataset.name;
+        const productPrice = parseFloat(e.target.closest('.add-to-cart').dataset.price);
+
+        // Añadir producto al array del carrito
+        cart.push({ name: productName, price: productPrice });
+        updateCart(); // Actualizar carrito
+    });
+});
+
+// Botón de pago (solo muestra un mensaje por ahora)
+checkoutBtn.addEventListener('click', () => {
+    alert('Procesando el pago...');
+    window.location.href = 'pago.html';
+    cart = []; // Vaciar el carrito
+    updateCart(); // Actualizar carrito
+});
+
+    </script>
+    </div>
+</body>
+
+</html>

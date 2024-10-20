@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Pedido</title>
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="apple-touch-icon" href="assets/img/g.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/g.ico">
+    <style>
+        body {
+	background: url('https://img.freepik.com/vector-gratis/paisaje-bosque-tropical-montanas-azules_23-2148278400.jpg?ga=GA1.1.1520758390.1729258012&semt=ais_hybrid') no-repeat center center fixed; /* Imagen de fondo */
+	background-size: cover; /* Ajusta la imagen para que cubra toda la pantalla */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+        .container {
+            background: rgba(255, 255, 255, 0.2); /* Fondo transparente */ 
+            padding: 30px;
+            border-radius: 10px; /* Bordes redondeados para suavizar el efecto */ 
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3); 
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
+            text-align: center;
+            
+        }
+        
+        h1 {
+            color: #000000;
+        }
+
+        p {
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #4184ff;
+            color: #fff;
+            padding: 20px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         
+        <i class="fas fa-check-circle fa-5x" style="color: #4184ff;"></i>
+        <h1>¡Tu pedido ha sido realizado!</h1>
+        <p>Tu pedido ha sido procesado con éxito. Pronto recibirás más información sobre el estado del envío.</p>
+        <button class="button" onclick="window.location.href = 'pruebainicio/index.html';">Volver a la página principal</button>
+    </div>
+</body>
+</html>
